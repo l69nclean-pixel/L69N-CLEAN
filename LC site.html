@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>L69N Clean</title>
+
+  <!-- Google Calendar style -->
+  <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #13adb531;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    header {
+      padding: 50px 20px;
+    }
+
+    img {
+      width: 500px;
+    }
+
+    h1 {
+      color: #d4af37;
+      margin-top: 15px;
+      font-size: 34px;
+    }
+
+    .phone {
+      margin: 25px;
+      font-size: 22px;
+    }
+
+    .phone a {
+      color: #d4af37;
+      text-decoration: none;
+    }
+
+    .calendar-btn {
+      margin-top: 20px;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="Logo.png" alt="Logo">
+    <h1>L69N CLEAN</h1>
+  </header>
+
+  <div class="phone">
+    📞 <a href="tel:0774902271">07 74 90 22 71</a>
+  </div>
+
+  <!-- Bouton Google Calendar -->
+  <div class="calendar-btn"></div>
+
+  <footer>
+    © 2026 L69N Clean - Nettoyage automobile
+  </footer>
+
+  <!-- Script Google Calendar -->
+  <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+
+  <script>
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2gIl_CzL1RbRbWNXMetBgBqB68tGFZbnijtAA-7risdOlBPdV1eg5_sA7d-ibYZcMmpwlnwD__?gv=true',
+      color: '#d4af37',
+      label: 'Réserver un rendez-vous',
+      target: document.querySelector('.calendar-btn')
+    });
+  });
+  </script>
+
+</body>
+</html>
