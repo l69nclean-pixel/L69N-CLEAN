@@ -13,9 +13,23 @@
   <style>
     body {
       margin: 0;
-      background-color: #ffffff;
       font-family: Arial, sans-serif;
       text-align: center;
+
+      background: url("background.png") no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* OVERLAY SOMBRE */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: -1;
     }
 
     header {
@@ -61,10 +75,38 @@
       background-color: #b8962e;
     }
 
+    .whatsapp {
+      margin-top: 15px;
+    }
+
+    .whatsapp a {
+      display: inline-block;
+      padding: 14px 25px;
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .whatsapp a:hover {
+      background-color: #1ebe5d;
+    }
+
+    .gallery-link {
+      margin-top: 15px;
+    }
+
+    .gallery-link a {
+      color: #d4af37;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
     footer {
       margin-top: 30px;
       padding: 20px;
-      color: #777;
+      color: #ccc;
       font-size: 13px;
     }
 
@@ -78,7 +120,8 @@
         font-size: 18px;
       }
 
-      .instagram a {
+      .instagram a,
+      .whatsapp a {
         width: 80%;
       }
     }
@@ -105,6 +148,18 @@
     </a>
   </div>
 
+  <!-- WhatsApp -->
+  <div class="whatsapp">
+    <a href="https://wa.me/33774902271" target="_blank">
+      💬 Contacter sur WhatsApp
+    </a>
+  </div>
+
+  <!-- Galerie -->
+  <div class="gallery-link">
+    <a href="galerie.html">📸 Voir nos réalisations</a>
+  </div>
+
   <footer>
     © 2026 L69N Clean - Nettoyage automobile
   </footer>
@@ -124,8 +179,4 @@
   </script>
 
 </body>
-</html><div style="margin-top:15px;">
-  <a href="galerie.html" style="color:#d4af37; font-weight:bold;">
-    📸 Voir nos réalisations
-  </a>
-</div>
+</html>
