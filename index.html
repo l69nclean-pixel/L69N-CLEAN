@@ -20,7 +20,7 @@
       background-size: cover;
     }
 
-    /* OVERLAY SOMBRE */
+    /* FILTRE SOMBRE */
     body::before {
       content: "";
       position: fixed;
@@ -32,8 +32,14 @@
       z-index: -1;
     }
 
+    /* BLOC LOGO (IMPORTANT 🔥) */
     header {
-      padding: 20px 10px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.25);
+      display: inline-block;
+      border-radius: 20px;
+      margin-top: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
 
     img {
@@ -42,8 +48,8 @@
     }
 
     .phone {
-      margin: 15px;
-      font-size: 20px;
+      margin: 20px;
+      font-size: 22px;
     }
 
     .phone a {
@@ -56,7 +62,9 @@
       margin-top: 15px;
     }
 
-    .instagram {
+    .instagram,
+    .whatsapp,
+    .gallery-link {
       margin-top: 15px;
     }
 
@@ -68,15 +76,10 @@
       text-decoration: none;
       border-radius: 10px;
       font-weight: bold;
-      font-size: 16px;
     }
 
     .instagram a:hover {
       background-color: #b8962e;
-    }
-
-    .whatsapp {
-      margin-top: 15px;
     }
 
     .whatsapp a {
@@ -93,10 +96,6 @@
       background-color: #1ebe5d;
     }
 
-    .gallery-link {
-      margin-top: 15px;
-    }
-
     .gallery-link a {
       color: #d4af37;
       font-weight: bold;
@@ -110,7 +109,7 @@
       font-size: 13px;
     }
 
-    /* MOBILE OPTIMISATION */
+    /* MOBILE */
     @media (max-width: 600px) {
       img {
         width: 95%;
@@ -135,7 +134,7 @@
   </header>
 
   <div class="phone">
-    📞 <a href="tel:0774902271">07 74 90 22 71</a>
+    📞 <a href="tel:+33774902271">07 74 90 22 71</a>
   </div>
 
   <!-- Bouton Google Calendar -->
@@ -151,17 +150,17 @@
   <!-- WhatsApp -->
   <div class="whatsapp">
     <a href="https://wa.me/33774902271" target="_blank">
-      💬 Contacter sur WhatsApp
+      📲 Contacter sur WhatsApp
     </a>
   </div>
 
   <!-- Galerie -->
   <div class="gallery-link">
-    <a href="galerie.html">📸 Voir nos réalisations</a>
+    <a href="galerie.html">🧼 Voir nos réalisations🧽</a>
   </div>
 
   <footer>
-    © 2026 L69N Clean - Nettoyage automobile - Site By Creation Logo Lyon
+    © 2026 L69N Clean - Site By Creation Logo Lyon
   </footer>
 
   <!-- Script Google Calendar -->
