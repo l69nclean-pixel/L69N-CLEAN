@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>L69N Clean</title>
+
+  <!-- RESPONSIVE MOBILE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Calendar style -->
+  <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+
+      background: url("background.png") no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* OVERLAY SOMBRE */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: -1;
+    }
+
+    header {
+      padding: 20px 10px;
+    }
+
+    img {
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .phone {
+      margin: 15px;
+      font-size: 20px;
+    }
+
+    .phone a {
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .calendar-btn {
+      margin-top: 15px;
+    }
+
+    .instagram {
+      margin-top: 15px;
+    }
+
+    .instagram a {
+      display: inline-block;
+      padding: 14px 25px;
+      background-color: #d4af37;
+      color: black;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .instagram a:hover {
+      background-color: #b8962e;
+    }
+
+    .whatsapp {
+      margin-top: 15px;
+    }
+
+    .whatsapp a {
+      display: inline-block;
+      padding: 14px 25px;
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .whatsapp a:hover {
+      background-color: #1ebe5d;
+    }
+
+    .gallery-link {
+      margin-top: 15px;
+    }
+
+    .gallery-link a {
+      color: #d4af37;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 20px;
+      color: #ccc;
+      font-size: 13px;
+    }
+
+    /* MOBILE OPTIMISATION */
+    @media (max-width: 600px) {
+      img {
+        width: 95%;
+      }
+
+      .phone {
+        font-size: 18px;
+      }
+
+      .instagram a,
+      .whatsapp a {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo">
+  </header>
+
+  <div class="phone">
+    📞 <a href="tel:0774902271">07 74 90 22 71</a>
+  </div>
+
+  <!-- Bouton Google Calendar -->
+  <div class="calendar-btn"></div>
+
+  <!-- Instagram -->
+  <div class="instagram">
+    <a href="https://www.instagram.com/l69nclean" target="_blank">
+      📸 Voir notre Instagram
+    </a>
+  </div>
+
+  <!-- WhatsApp -->
+  <div class="whatsapp">
+    <a href="https://wa.me/33774902271" target="_blank">
+      💬 Contacter sur WhatsApp
+    </a>
+  </div>
+
+  <!-- Galerie -->
+  <div class="gallery-link">
+    <a href="galerie.html">📸 Voir nos réalisations</a>
+  </div>
+
+  <footer>
+    © 2026 L69N Clean - Nettoyage automobile
+  </footer>
+
+  <!-- Script Google Calendar -->
+  <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+
+  <script>
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2gIl_CzL1RbRbWNXMetBgBqB68tGFZbnijtAA-7risdOlBPdV1eg5_sA7d-ibYZcMmpwlnwD__?gv=true',
+      color: '#d4af37',
+      label: 'Réserver un rendez-vous',
+      target: document.querySelector('.calendar-btn')
+    });
+  });
+  </script>
+
+</body>
+</html>
