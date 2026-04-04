@@ -18,6 +18,7 @@
 
       background: url("background.png") no-repeat center center fixed;
       background-size: cover;
+      color: white;
     }
 
     /* FILTRE SOMBRE */
@@ -32,7 +33,7 @@
       z-index: -1;
     }
 
-    /* BLOC LOGO (IMPORTANT 🔥) */
+    /* BLOC LOGO */
     header {
       padding: 20px;
       background: rgba(255, 255, 255, 0.25);
@@ -45,6 +46,31 @@
     img {
       width: 90%;
       max-width: 500px;
+    }
+
+    /* NOUVEAU BLOC TEXTE */
+    .reservation {
+      max-width: 750px;
+      margin: 25px auto;
+      padding: 20px;
+      background: rgba(0,0,0,0.5);
+      border-radius: 12px;
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    .reservation h2 {
+      color: #B68F38;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .reservation ul {
+      padding-left: 20px;
+    }
+
+    .reservation li {
+      margin: 8px 0;
     }
 
     .phone {
@@ -132,6 +158,34 @@
   <header>
     <img src="logo.png" alt="Logo">
   </header>
+
+  <!-- 🔥 TEXTE AJOUTÉ ICI -->
+  <div class="reservation">
+    <h2>Nettoyage de voiture – Réservation</h2>
+
+    <p>Merci de votre confiance ☺️</p>
+
+    <p>
+      Pour optimiser l’organisation de nos créneaux, nous ne pouvons pas prendre de rendez-vous au-delà de 30 jours.
+    </p>
+
+    <p>
+      Afin de garantir la meilleure qualité de service, nous vous demandons de bien vouloir confirmer votre rendez-vous et de nous envoyer quelques photos de l’état de votre véhicule après votre réservation.
+    </p>
+
+    <p>📍 Deux options s’offrent à vous :</p>
+
+    <ul>
+      <li><strong>À domicile :</strong> nous pouvons nous déplacer directement chez vous</li>
+      <li><strong>Sur place :</strong> nous vous accueillons vers Craponne</li>
+    </ul>
+
+    <p>
+      Ces informations nous permettent de mieux préparer notre intervention et de vous proposer un service adapté à votre véhicule.
+    </p>
+
+    <p><strong>Merci et à très bientôt !</strong></p>
+  </div>
 
   <div class="phone">
     📞 <a href="tel:+33774902271">07 74 90 22 71</a>
