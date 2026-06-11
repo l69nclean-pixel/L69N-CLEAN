@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -31,31 +32,30 @@
         h1 {
             color: #B68F38;
             margin-top: 40px;
-            font-size: 50px;
+            font-size: 32px;
         }
 
         .intro {
             color: #B68F38;
-            font-size: 26px;
-            font-style: italic;
-            margin-bottom: 40px;
+            font-size: 18px;
+            margin-bottom: 30px;
             padding: 0 20px;
         }
 
         /* Galerie */
         .gallery {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
+            gap: 25px;
             padding: 20px;
         }
 
         .gallery img {
-            width: 220px;
-            height: 150px;
+            width: 350px;
+            height: 250px;
             object-fit: cover;
             border-radius: 15px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.5);
@@ -72,7 +72,7 @@
             color: #B68F38;
             text-decoration: none;
             font-weight: bold;
-            font-size: 28px;
+            font-size: 18px;
         }
 
         .back:hover {
@@ -82,20 +82,26 @@
         @media (max-width: 600px) {
 
             h1 {
-                font-size: 36px;
+                font-size: 26px;
             }
 
             .intro {
-                font-size: 20px;
+                font-size: 16px;
+            }
+
+            .gallery {
+                flex-direction: column;
+                align-items: center;
             }
 
             .gallery img {
-                width: 160px;
-                height: 110px;
+                width: 90%;
+                max-width: 350px;
+                height: auto;
             }
 
             .back {
-                font-size: 22px;
+                font-size: 16px;
             }
         }
 
@@ -113,13 +119,9 @@
     <div class="gallery">
 
         <img src="photo1.png" alt="Nettoyage automobile">
-
         <img src="photo2.png" alt="Nettoyage automobile">
-
         <img src="photo3.png" alt="Nettoyage automobile">
-
         <img src="photo4.png" alt="Nettoyage automobile">
-
         <img src="photo5.png" alt="Nettoyage automobile">
 
     </div>
@@ -130,3 +132,4 @@
 
 </body>
 </html>
+```
